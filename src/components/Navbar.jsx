@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import {AiFillGithub,AiFillLinkedin} from 'react-icons/ai'
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -30,7 +31,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+        scrolled ? "bg-primary backdrop-filter backdrop-blur-lg bg-opacity-30" : "bg-transparent"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -57,7 +58,15 @@ const Navbar = () => {
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
+            
           ))}
+          <li>
+                 <div className="flex gap-2 text-3xl ">
+                <a onClick={() => window.open("https://github.com/watwatos", "_blank")} className="cursor-pointer hover:opacity-80"><AiFillGithub/></a>
+                <a  onClick={() => window.open("https://www.linkedin.com/in/ali-chamas-b4a627276/", "_blank")}  
+                className="cursor-pointer hover:opacity-80"><AiFillLinkedin/></a>
+                </div>
+                </li>
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
@@ -86,9 +95,20 @@ const Navbar = () => {
                   }}
                 >
                   <a href={`#${nav.id}`}>{nav.title}</a>
+                  
                 </li>
+                
               ))}
+              <li>
+                 <div className="flex gap-2 text-3xl ">
+                <a onClick={() => window.open("https://github.com/watwatos", "_blank")} className="cursor-pointer hover:opacity-80"><AiFillGithub/></a>
+                <a  onClick={() => window.open("https://www.linkedin.com/in/ali-chamas-b4a627276/", "_blank")}  
+                className="cursor-pointer hover:opacity-80"><AiFillLinkedin/></a>
+                </div>
+                </li>
+             
             </ul>
+            
           </div>
         </div>
       </div>

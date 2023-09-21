@@ -1,9 +1,26 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-
+import {BiSolidDownload} from 'react-icons/bi'
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Hero = () => {
+
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('Ali Chamas.pdf').then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'Ali Chamas.pdf';
+            alink.click();
+        })
+    })
+}
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -29,23 +46,14 @@ const Hero = () => {
       </div>
 
 
+        
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
-          </div>
-        </a>
+      <div className='absolute xs:bottom-32  w-full flex justify-center items-center'>
+       
+      <button onClick={onButtonClick} class="relative rounded px-5 py-2.5 overflow-hidden group bg-red-500  hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-red-400 transition-all ease-out duration-300 ">
+<span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
+<span class="relative flex gap-2 items-center text-lg"><BiSolidDownload/> Resume</span>
+</button>
       </div>
     </section>
   );

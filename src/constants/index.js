@@ -25,6 +25,8 @@ java,
   
 } from "../assets";
 
+
+
 export const navLinks = [
   {
     id: "about",
@@ -38,6 +40,7 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+ 
 ];
 
 const services = [
