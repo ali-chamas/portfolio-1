@@ -48,7 +48,7 @@ const Hero = () => {
 
         
 
-      <div className='absolute xs:bottom-32  w-full flex justify-center items-center'>
+      <div className='absolute bottom-32  w-full flex justify-center items-center'>
        
       <button onClick={onButtonClick} class="relative rounded px-5 py-2.5 overflow-hidden group bg-red-500  hover:bg-gradient-to-r hover:from-red-500 hover:to-red-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-red-400 transition-all ease-out duration-300 ">
 <span class="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
