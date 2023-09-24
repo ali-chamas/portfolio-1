@@ -7,20 +7,14 @@ import {
   html,
   css,
   reactjs,
-  redux,
+  
   tailwind,
   nodejs,
   mongodb,
   git,
 java,
   mysql,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  Cars,
   nextjs,
   
 } from "../assets";
@@ -148,6 +142,25 @@ const projects = [
     image: photographer,
     source_code_link: "https://github.com/watwatos/photographer-website",
     web_link:"https://photographer-website-beta.vercel.app/",
+  },
+  {
+    name: "Car Showcase",
+    description:
+      "Search for your desired brands and learn about available cars, the car informations are fetched from a fake json data that I made",
+    tags: [
+      {
+        name: "next js",
+        color: "blue-text-gradient",
+      },
+      
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Cars,
+    source_code_link: "https://github.com/watwatos/car-display",
+    web_link:"https://car-display-sigma.vercel.app/",
   },
 
 ];

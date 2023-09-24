@@ -31,6 +31,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import universus from "../assets/universus.png"
 import photographer from "../assets/photographers.png"
+import Cars from "../assets/Cars.png"
 export {
   logo,
   backend,
@@ -63,4 +64,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  Cars
 };
