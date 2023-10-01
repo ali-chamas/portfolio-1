@@ -7,7 +7,7 @@ import {
   html,
   css,
   reactjs,
-  
+  dropifyy,
   tailwind,
   nodejs,
   mongodb,
@@ -161,7 +161,29 @@ const projects = [
     image: Cars,
     source_code_link: "https://github.com/watwatos/car-display",
     web_link:"https://car-display-sigma.vercel.app/",
-  },
+  },{
+    name: "Dropify",
+    description:
+      "A full stack delivery app where you can create an account and order a delivery, manage the orders as an admin at admin@admin.com password:password",
+    tags: [
+      {
+        name: "react js",
+        color: "blue-text-gradient",
+      },
+      
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+    ],
+    image: dropifyy,
+    source_code_link: "https://github.com/watwatos/dropify-deliver-website",
+    web_link:"https://dropify-hazel.vercel.app/"
+  }
 
 ];
 

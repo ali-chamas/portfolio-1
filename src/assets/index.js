@@ -32,7 +32,9 @@ import tripguide from "./tripguide.png";
 import universus from "../assets/universus.png"
 import photographer from "../assets/photographers.png"
 import Cars from "../assets/Cars.png"
+import dropifyy from '../assets/dropifyy.png'
 export {
+  dropifyy,
   logo,
   backend,
   creator,
