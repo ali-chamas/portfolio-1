@@ -52,19 +52,24 @@ const services = [
 
 const technologies = [
   
-  
   {
-    name: "React JS",
-    icon: reactjs,
+    name:"HTML 5",
+    icon:html,
   },
   {
-    name: "Next JS",
-    icon: nextjs,
+    name:"Css 3",
+    icon:css,
   },
-    {
-      name:"Javascript",
-      icon:javascript,
+  {name:"Javascript",
+    icon:javascript,
     },
+
+    {
+      name:"React Js",
+      icon:reactjs,
+    },
+    {name:"NextJs",icon:nextjs,},
+  
   {
     name: "TypeScript",
     icon: typescript,
@@ -166,10 +171,6 @@ const projects = [
       {
         name: "node js",
         color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
       },
       {
         name: "mysql",
