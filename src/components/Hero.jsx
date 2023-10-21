@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import {BiSolidDownload} from 'react-icons/bi'
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+
 
 const Hero = () => {
 
